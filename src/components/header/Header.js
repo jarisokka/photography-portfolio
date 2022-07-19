@@ -1,13 +1,25 @@
 import './Header.css'
+import logo from '../images/logo.png'
 
 const Header = () => {
+
+  const pages = ['home', 'recent', 'gallery', 'about', 'contact'];
+
   return (
-    <section>
-      <div>
-        <h2>Header</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu metus sed sem malesuada aliquam ac nec risus. Proin id odio nec ligula bibendum consequat. In est elit, tristique non mauris tempor, finibus fringilla mi. Pellentesque blandit ac mauris eu volutpat. In lobortis nisl vel congue facilisis. Pellentesque ultricies turpis leo, et consectetur massa dictum non. Vivamus mattis commodo elit, in hendrerit dolor mattis sit amet. Sed iaculis diam a rhoncus volutpat. Integer vel varius augue. Maecenas sollicitudin, est in finibus semper, justo enim malesuada lectus, at dictum nibh enim et urna. Fusce pulvinar enim id arcu varius dignissim. Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
+    <header div className='container'>
+      <div className='navbar-logo'>
+          <img src={logo} alt='logo'/>
       </div>
-    </section>
+      <nav>
+        <ul>
+          {pages.map((item) => (
+            <li key={`link-${item}`}>
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   )
 }
 

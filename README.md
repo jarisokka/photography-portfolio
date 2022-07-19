@@ -8,3 +8,7 @@
 Sovellusta voi testata Herokussa:
 
 -Tulossa myöhemmin
+
+## Työaikakirjanpito
+
+[Työaikakirjanpito](./tuntikirjanpito.md)
