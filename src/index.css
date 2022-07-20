@@ -10,22 +10,39 @@
   text-decoration: none;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
-}
-
 :root {
   --color-primary: #0095ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-secondary: #ff0000;
   --color-secondary-variant: rgba(223, 186, 176, 0.4);
-  --color-navigation: rgba(255, 255, 255, 0.25);
-  --color-navigation-variant:rgba(255, 255, 255, 0.7);
+  --color-navigation-bg: rgba(255, 255, 255, 0.447);
+  --color-navigation-tx:rgb(38, 67, 92);
+  --color-navigation-tx-variant:rgb(14, 24, 32);
+
+  --container-width-lg: 90%;
+  --container-width-md: 95%;
+  --container-width-sm: 98%;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  /* prevent overflow problems */
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ========= GENERAL STYLES ======= */
 .container {
-  width: 90%;
+  width: var(--container-width-lg);
   margin: 0 auto;
 }
 
@@ -39,4 +56,27 @@ h1 {
 
 section {
   margin-top: 8rem;
+}
+
+
+/* ========= MEDIUM DEVICES ========= */
+@media screen and (max-width: 1024px){
+  .container {
+    width: var(--container-width-md);
+  }
+  
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* ========= SMALL DEVICES ========= */
+@media screen and (max-width: 600px){
+  .container {
+    width: var(--container-width-sm);
+  }
+  
+  section {
+    margin-top: 3rem;
+  }
 }
