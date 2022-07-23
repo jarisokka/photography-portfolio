@@ -8,7 +8,7 @@ const Landing = () => {
   const [text, setText] = useState('')
   const [time, setTime] = useState(100)
 
-  const textList = ['Welcome to my', 'World of Photography']
+  const textList = ['my World of Photography']
 
   useEffect(() => {
     let timer = setInterval(() => tick(), time)
@@ -31,20 +31,27 @@ const Landing = () => {
     if(!isDeleting && updateText === fullText) {
       setIsDeleting(true)
       //end of the text, let´s take a break
-      setTime(2000)
+      setTime(20000)
 
     } else if (isDeleting && updateText === '') {
       setIsDeleting(false)
       setWordNum(wordNum +1)
+      //start of the text, let´s take a break
+      setTime(1000)
     }
 
   }
 
   return (
-    <div id='home'>
-      <div className='container'>
-        <img src={kansi} alt='kansi'/>
-        <h1><span>{text}</span></h1>
+    <div className='container' id='home'>
+      <img src={kansi} alt='kansi'/>
+      <div className='container-title'>       
+        <div>
+          <h1>Welcome to</h1>
+        </div>
+        <div>
+          <h1><span>{text}</span></h1>
+        </div>
       </div>
     </div>
   )

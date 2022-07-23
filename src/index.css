@@ -18,7 +18,7 @@
   --color-navigation-bg: rgba(255, 255, 255, 0.447);
   --color-navigation-tx:rgb(38, 67, 92);
   --color-navigation-tx-variant:rgb(14, 24, 32);
-  --color-titel: black;
+  --color-title: rgba(255, 255, 255, 0.4);
 
   --container-width-lg: 90%;
   --container-width-md: 95%;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bolder;
 }
 

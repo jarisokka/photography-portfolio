@@ -1,4 +1,5 @@
 .container-nav {
+  z-index: 9998;
   display: flex;
   position: fixed;
   width: var(--container-width-lg);
@@ -97,6 +98,13 @@
 
   .navbar {
     display: none;
+  }
+
+  .navbar-logo {
+    width: 100px;
+    min-width: 100px;
+    max-height: auto;
+    padding: 0.5rem;
   }
 
   .burger {
