@@ -7,4 +7,5 @@
 | 20.7. | 8,5    | Navigaatio joka mukautuu näytön kokoon |
 | 22.7. | 6    | Landing sivu, jossa taustakuva ja animoitu otsikko |
 | 23.7. | 2    | css muokkausta mobiiliystävälliseksi |
-| yht   | 24,5  | | 
+| 26.7. | 4    | Recent osion aloitus, kuvakarusellin ensimmäinen versio |
+| yht   | 28,5  | | 

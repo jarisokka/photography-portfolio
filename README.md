@@ -12,3 +12,6 @@ Sovellusta voi testata Herokussa:
 ## Työaikakirjanpito
 
 [Työaikakirjanpito](./tuntikirjanpito.md)
+
+
+All pictures Copyright by Jari Sokka 
