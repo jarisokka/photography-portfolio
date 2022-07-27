@@ -8,4 +8,5 @@
 | 22.7. | 6    | Landing sivu, jossa taustakuva ja animoitu otsikko |
 | 23.7. | 2    | css muokkausta mobiiliystävälliseksi |
 | 26.7. | 4    | Recent osion aloitus, kuvakarusellin ensimmäinen versio |
-| yht   | 28,5  | | 
+| 27.7. | 4,5    | Recent osion jatkoa: tietojen lisäys kuvakaruselliin sekä css viimeistelyä |
+| yht   | 33  | | 

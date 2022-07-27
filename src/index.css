@@ -56,9 +56,18 @@ h1 {
   font-weight: bolder;
 }
 
+h2 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 18px;
+}
+
 section {
   margin-top: 10rem;
-  height: 100vh;
+  height: 60vh;
 }
 
 
@@ -66,6 +75,18 @@ section {
 @media screen and (max-width: 1024px){
   .container {
     width: var(--container-width-md);
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 14px;
   }
   
   section {
@@ -77,6 +98,18 @@ section {
 @media screen and (max-width: 600px){
   .container {
     width: var(--container-width-sm);
+  }
+
+  body {
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
   }
   
   section {
