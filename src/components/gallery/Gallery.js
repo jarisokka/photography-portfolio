@@ -1,11 +1,27 @@
 import './Gallery.css'
+import kansi from '../../assets/images/kansi.jpg'
 
 const Gallery = () => {
   return (
     <section id='gallery'>
       <div className='container'>
         <h2>Gallery</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu metus sed sem malesuada aliquam ac nec risus. Proin id odio nec ligula bibendum consequat. In est elit, tristique non mauris tempor, finibus fringilla mi. Pellentesque blandit ac mauris eu volutpat. In lobortis nisl vel congue facilisis. Pellentesque ultricies turpis leo, et consectetur massa dictum non. Vivamus mattis commodo elit, in hendrerit dolor mattis sit amet. Sed iaculis diam a rhoncus volutpat. Integer vel varius augue. Maecenas sollicitudin, est in finibus semper, justo enim malesuada lectus, at dictum nibh enim et urna. Fusce pulvinar enim id arcu varius dignissim. Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
+        <p>Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
+        <div className='gallery-wrapper'>
+          <div className='gallery'>
+            <div className='gallery-image'>
+              <img src={kansi} alt='gallery1'/>
+            </div>
+            <div className='gallery-title'>
+              <h4>Landscapes</h4>
+            </div>
+            <div className='gallery-desc'>
+              <h3>Pictures from Finland</h3>
+              <hr className='line'></hr>
+              <p>Here are some of my favorite landscape pictures from my home country.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

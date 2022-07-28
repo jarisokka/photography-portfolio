@@ -19,6 +19,7 @@
   --color-navigation-tx:rgb(38, 67, 92);
   --color-navigation-tx-variant:rgb(14, 24, 32);
   --color-title: rgba(255, 255, 255, 0.4);
+  --color-background: rgb(249, 249, 249);
 
   --container-width-lg: 90%;
   --container-width-md: 95%;
@@ -30,6 +31,7 @@ body {
   line-height: 1.7;
   /* prevent overflow problems */
   overflow-x: hidden;
+  background-color: var(--color-background);
 }
 
 html {
@@ -65,9 +67,11 @@ p {
   font-size: 18px;
 }
 
+
+
 section {
   margin-top: 10rem;
-  height: 60vh;
+  /*height: 60vh; */
 }
 
 

@@ -9,4 +9,5 @@
 | 23.7. | 2    | css muokkausta mobiiliystävälliseksi |
 | 26.7. | 4    | Recent osion aloitus, kuvakarusellin ensimmäinen versio |
 | 27.7. | 4,5    | Recent osion jatkoa: tietojen lisäys kuvakaruselliin sekä css viimeistelyä |
-| yht   | 33  | | 
+| 28.7. | 5,5    | Gallery osion aloitus: perusrakenne ja sen css määrittely |
+| yht   | 38,5  | | 

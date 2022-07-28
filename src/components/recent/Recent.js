@@ -19,7 +19,7 @@ const Recent = () => {
   return (
     <section id='recent'>
       <div className='container'>
-        <div className='wrapper'>
+        <div className='recent-wrapper'>
           <div className='heading'>
             <h2>Recent</h2>
             <p>Here are some of my recent pictures</p>
