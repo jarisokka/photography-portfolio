@@ -1,27 +1,40 @@
+import { useState } from 'react'
+import { galleryData } from '../../assets/data/gallery-data'
+import Show from './Show'
 import './Gallery.css'
-import kansi from '../../assets/images/kansi.jpg'
 
 const Gallery = () => {
+  const [showGallery, setShowGallery] = useState(null)
+
+  const handleClick = (images) => {
+    setShowGallery(images)
+  }
+
   return (
     <section id='gallery'>
       <div className='container'>
         <h2>Gallery</h2>
         <p>Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
         <div className='gallery-wrapper'>
-          <div className='gallery'>
-            <div className='gallery-image'>
-              <img src={kansi} alt='gallery1'/>
+        {galleryData.map(({id, coverimage, gategory, title, description, images}) => {
+          return (
+            <div key={id} className='gallery'>
+              <div className='gallery-image'>
+                <img src={coverimage} alt={id} onClick={() => handleClick(images)}/>
+              </div>
+              <div className='gallery-gategory'>
+                <h4>{gategory}</h4>
+              </div>
+              <div className='gallery-desc'>
+                <h3>{title}</h3>
+                <hr className='line'></hr>
+                <p>{description}</p>
+              </div>
             </div>
-            <div className='gallery-title'>
-              <h4>Landscapes</h4>
-            </div>
-            <div className='gallery-desc'>
-              <h3>Pictures from Finland</h3>
-              <hr className='line'></hr>
-              <p>Here are some of my favorite landscape pictures from my home country.</p>
-            </div>
-          </div>
+          )
+        })}
         </div>
+        {showGallery && (<Show showGallery={showGallery} setShowGallery={setShowGallery}/>)}
       </div>
     </section>
   )

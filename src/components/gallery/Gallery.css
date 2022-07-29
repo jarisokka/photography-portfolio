@@ -23,7 +23,7 @@
   filter: brightness(100%);
 }
 
-.gallery-title {
+.gallery-gategory {
   position: absolute;
   place-self: left;
   margin-top: 1.5rem;
