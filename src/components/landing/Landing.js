@@ -43,14 +43,22 @@ const Landing = () => {
   }
 
   return (
-    <div className='container' id='home'>
-      <img src={kansi} alt='kansi'/>
-      <div className='container-title'>       
-        <div>
-          <h1>Welcome to</h1>
-        </div>
-        <div>
-          <h1><span>{text}</span></h1>
+    <div id='home'>
+      <div className='cover'>
+        <img src={kansi} alt='kansi'/>
+      </div>
+      <div className='container'>
+        <div className='container-title'>       
+          <div>
+            <h1>Welcome to</h1>
+          </div>
+          <div>
+            <h1><span>{text}</span></h1>
+          </div>
+          <div>
+            <hr></hr>
+            <a href={`#gallery`}>To my gallery</a>
+          </div>
         </div>
       </div>
     </div>

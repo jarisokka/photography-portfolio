@@ -11,4 +11,5 @@
 | 27.7. | 4,5    | Recent osion jatkoa: tietojen lisäys kuvakaruselliin sekä css viimeistelyä |
 | 28.7. | 5,5    | Gallery osion aloitus: perusrakenne ja sen css määrittely |
 | 29.7. | 4    | Komponettien lisäämistä gallery osioon |
-| yht   | 42,5  | | 
+| 1.8. | 6,5    | Gallery osion viimeistelyä ja muita hienosäätöjä |
+| yht   | 49  | | 
