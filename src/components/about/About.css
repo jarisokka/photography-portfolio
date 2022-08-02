@@ -1,0 +1,26 @@
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 65% 20%;
+
+}
+
+.profile {
+  align-self: center;
+  padding: 4rem;
+
+  background-color: var(--color-primary);
+}
+
+.profile img {
+  object-fit: cover;
+  width: 350px;
+  height: 450px;
+  box-shadow: var(--shadow);
+}
+
+.about-desc {
+  width: 90%;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}

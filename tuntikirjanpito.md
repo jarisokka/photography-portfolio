@@ -12,4 +12,5 @@
 | 28.7. | 5,5    | Gallery osion aloitus: perusrakenne ja sen css määrittely |
 | 29.7. | 4    | Komponettien lisäämistä gallery osioon |
 | 1.8. | 6,5    | Gallery osion viimeistelyä ja muita hienosäätöjä |
-| yht   | 49  | | 
+| 2.8. | 5    | css tyylien muokkausta ja About osion aloitus |
+| yht   | 54 | | 

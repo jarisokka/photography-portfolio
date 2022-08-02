@@ -11,7 +11,7 @@
 }
 
 :root {
-  --color-primary: #0095ff;
+  --color-primary: rgba(191, 196, 199, 0.5);
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-secondary: #ff0000;
   --color-secondary-variant: rgba(223, 186, 176, 0.4);
@@ -45,9 +45,33 @@ html {
 
 
 /* ========= GENERAL STYLES ======= */
+.background {
+  background-color: var(--color-primary);
+}
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 0.8rem;
+  padding-top: 4rem;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  color: var(--color-navigation-tx);
+}
+
+.title hr {
+  margin-bottom: 1rem;
+  border: 2px solid var(--color-navigation-tx);
+  width: 50%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,8 +95,8 @@ p {
 
 
 section {
-  margin-top: 10rem;
-  /*min-height: 100vh; */
+  margin-top: 6rem;
+  min-height: 100vh;
 }
 
 

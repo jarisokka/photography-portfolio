@@ -12,9 +12,13 @@ const Gallery = () => {
 
   return (
     <section id='gallery'>
+      <div className='background'>
       <div className='container'>
+        <div className='title'>
         <h2>Gallery</h2>
+        <hr></hr>
         <p>Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
+        </div>
         <div className='gallery-wrapper'>
         {galleryData.map(({id, coverimage, gategory, title, description, images}) => {
           return (
@@ -35,6 +39,7 @@ const Gallery = () => {
         })}
         </div>
         {showGallery && (<Show showGallery={showGallery} setShowGallery={setShowGallery}/>)}
+      </div>
       </div>
     </section>
   )

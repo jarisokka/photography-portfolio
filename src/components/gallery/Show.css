@@ -1,5 +1,5 @@
 .display {
-  display: flexbox;
+  display: block;
   position: fixed;
   padding-top: 3%;
   top: 0;
@@ -12,7 +12,9 @@
 .display img {
   display: block;
   max-width: 70%;
-  margin: 3.75rem auto;
+  margin-left: 15%;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   border: 2px solid var(--color-background);
 }
 
@@ -26,6 +28,7 @@
 }
 
 .all-images img {
+  object-fit: cover;
   width: 100px;
   height: 100px;
   margin: 0.5rem;
