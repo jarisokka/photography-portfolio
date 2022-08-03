@@ -13,4 +13,5 @@
 | 29.7. | 4    | Komponettien lisäämistä gallery osioon |
 | 1.8. | 6,5    | Gallery osion viimeistelyä ja muita hienosäätöjä |
 | 2.8. | 5    | css tyylien muokkausta ja About osion aloitus |
-| yht   | 54 | | 
+| 3.8. | 8    | About osiossa taistelua pyörivän tekstin aikaansaamiseksi |
+| yht   | 62 | | 

@@ -1,7 +1,11 @@
 import './About.css'
 import profile from '../../assets/images/profiili.jpg'
+import insta from '../../assets/images/instagrid.jpg'
 
 const About = () => {
+
+  const textOriginal = 'FOLLOW - ME - ON - INSTAGRAM -'
+
   return (
     <section id='about'>
       <div className='container'>
@@ -21,12 +25,24 @@ const About = () => {
           <p>I have a particular passion for landscape and wildlife photography, but I don`t limit myself  to these categories and will photograph anything interesting that captures my attention.
   As a self-taught photographer, I challenge myself to learn new things and continually strive to improve my talent. I am always seeking out the best lighting conditions and new interesting places. Along with lighting and the environment, I pay close attention to technical settings.</p>
           <br></br>
-          <p>I am a Canon user and my current camera is Canon 5D Mark IV. I respect sturdy tipods like Manfrotto 055 and use mostly Canon L series lenses. If you have any queries relating to my work, please don`t hesitate to contact me. I am also open for collaborations and work offers.</p>
+          <p>If you have any queries relating to my work, please don`t hesitate to contact me. I am also open for collaborations and work offers.</p>
           </div>
           <div className='profile'>
             <img src={profile} alt='profile'/>
           </div>
         </div>
+      </div>
+      <div className='instagram'>
+          {<img src={insta} alt='instagram'/>}
+          <div className='instagram_btn style_btn'>
+            <p>
+            {textOriginal.split('').map((char, index) =>
+              <span style={{ transform: 'rotate(' + index * 12 + 'deg)' }}>
+                {char}
+              </span>
+            )}
+            </p>
+          </div>
       </div>
     </section>
   )
