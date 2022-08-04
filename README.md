@@ -14,4 +14,8 @@ Sovellusta voi testata Herokussa:
 [Työaikakirjanpito](./tuntikirjanpito.md)
 
 
+## Käytetyt kirjastot
+
+[React icons](https://react-icons.github.io/react-icons/) 
+
 All pictures Copyright by Jari Sokka 

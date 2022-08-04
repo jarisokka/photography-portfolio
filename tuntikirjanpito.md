@@ -14,4 +14,5 @@
 | 1.8. | 6,5    | Gallery osion viimeistelyä ja muita hienosäätöjä |
 | 2.8. | 5    | css tyylien muokkausta ja About osion aloitus |
 | 3.8. | 8    | About osiossa taistelua pyörivän tekstin aikaansaamiseksi |
-| yht   | 62 | | 
+| 4.8. | 1    | Ikonien metsästystä ja lopuksi päätös ikonikirjaston asentamisesta |
+| yht   | 63 | | 

@@ -1,6 +1,7 @@
 import './About.css'
 import profile from '../../assets/images/profiili.jpg'
 import insta from '../../assets/images/instagrid.jpg'
+import {BsInstagram} from 'react-icons/bs'
 
 const About = () => {
 
@@ -42,6 +43,7 @@ const About = () => {
               </span>
             )}
             </p>
+            <a href='https://instagram.com' target='_blank' rel="noreferrer"><BsInstagram/></a>
           </div>
       </div>
     </section>

@@ -7,7 +7,6 @@
 .profile {
   align-self: center;
   padding: 4rem;
-
   background-color: var(--color-primary);
 }
 
@@ -39,11 +38,17 @@
   object-fit: cover;
 }
 
+.instagram a {
+  position: absolute;
+  margin-top: 1rem;
+  color: var(--color-navigation-tx);
+  font-size: 65px;
+}
+
 .instagram_btn {
   margin-top: 6rem;
   display: grid;
   place-items: center;
-  background-color: aqua;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
