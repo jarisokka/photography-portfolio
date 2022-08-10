@@ -9,14 +9,53 @@
   background: rgba(27, 27, 27, 0.8);
 }
 
-.display img {
+.image-holder {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  max-width: 82%;
+}
+
+.image-holder img {
   display: block;
-  max-width: 70%;
-  margin-left: 15%;
+  max-width: 100%;
   margin-top: 4rem;
   margin-bottom: 1rem;
   border: 2px solid var(--color-background);
 }
+
+.left-button {
+  flex: 5%;
+  padding-right: 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: 45px;
+  font: bolder;
+}
+
+.right-button {
+  margin-top: -3%;
+  flex: 5%;
+  padding-left: 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: 45px;
+  font: bolder;
+}
+
+.close-button {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  margin-top: 6%;
+  padding: 1rem;
+  margin-left: 90%;
+  align-content: center;
+  justify-self: center;
+  align-self: center;
+}
+
 
 .all-images {
   display: flex;
@@ -34,59 +73,3 @@
   margin: 0.5rem;
   border: none;
 }
-
-.close-button {
-  position: absolute;
-  cursor: pointer;
-  z-index: 9998;
-  position: absolute;
-  top: 15%;
-  right: 7%;
-  font-size: 20px;
-  text-align: center;
-  width: 40px;
-  height: 40px;    
-  line-height: 40px;
-  border-radius: 50%;
-  background: var(--color-navigation-bg);
-  border: 1px solid var(--color-navigation-bg);
-  box-shadow: var(--shadow);
-}
-
-.right-button {
-  position: absolute;
-  cursor: pointer;
-  z-index: 9997;
-  position: absolute;
-  top: 35%;
-  right: 7%;
-  font-size: 20px;
-  text-align: center;
-  width: 40px;
-  height: 40px;    
-  line-height: 40px;
-  border-radius: 50%;
-  background: var(--color-navigation-bg);
-  border: 1px solid var(--color-navigation-bg);
-  box-shadow: var(--shadow);
-}
-
-.left-button {
-  position: absolute;
-  cursor: pointer;
-  z-index: 9997;
-  position: absolute;
-  top: 35%;
-  left: 7%;
-  font-size: 20px;
-  text-align: center;
-  width: 40px;
-  height: 40px;    
-  line-height: 40px;
-  border-radius: 50%;
-  background: var(--color-navigation-bg);
-  border: 1px solid var(--color-navigation-bg);
-  box-shadow: var(--shadow);
-}
-
-

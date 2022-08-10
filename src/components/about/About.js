@@ -1,7 +1,8 @@
 import './About.css'
 import profile from '../../assets/images/profiili.jpg'
 import insta from '../../assets/images/instagrid.jpg'
-import {BsInstagram} from 'react-icons/bs'
+import {BsInstagram, BsFacebook} from 'react-icons/bs'
+import {Fa500Px} from 'react-icons/fa'
 
 const About = () => {
 
@@ -30,6 +31,11 @@ const About = () => {
           </div>
           <div className='profile'>
             <img src={profile} alt='profile'/>
+          </div>
+          <div className='social'>
+            <a href='https://instagram.com' target='_blank' rel="noreferrer"><BsInstagram/></a>
+            <a href='https://500px.com' target='_blank' rel="noreferrer"><Fa500Px/></a>
+            <a href='https://facebook.com' target='_blank' rel="noreferrer"><BsFacebook/></a>
           </div>
         </div>
       </div>

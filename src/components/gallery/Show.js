@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Show.css'
+import {AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 const Show = ({showGallery, setShowGallery}) => {
 
@@ -21,10 +22,12 @@ const Show = ({showGallery, setShowGallery}) => {
 
   return (
     <div className='display close' onClick={handleClick}>
-      <div className='right-button' onClick={handleToRight}> R</div>
-      <div className='left-button' onClick={handleToLeft}> L</div>
-      <img src={showGallery[selection]} alt={selection}/>
       <div className='close close-button'> X</div>
+      <div className='image-holder'>
+        <div className='left-button' onClick={handleToLeft}> <AiOutlineLeft /></div>
+        <img src={showGallery[selection]} alt={selection}/>
+        <div className='right-button' onClick={handleToRight}> <AiOutlineRight /></div>       
+      </div>
       <div className='all-images'>
         {showGallery.map((image, index) => (
           <img style={{border: selection === index ? '2px solid white' : ''}}
