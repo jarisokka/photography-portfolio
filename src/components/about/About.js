@@ -44,7 +44,7 @@ const About = () => {
           <div className='instagram_btn style_btn'>
             <p>
             {textOriginal.split('').map((char, index) =>
-              <span style={{ transform: 'rotate(' + index * 12 + 'deg)' }}>
+              <span style={{ transform: 'rotate(' + index * 12 + 'deg)' }} key={index}>
                 {char}
               </span>
             )}

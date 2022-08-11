@@ -15,5 +15,6 @@
 | 2.8. | 5    | css tyylien muokkausta ja About osion aloitus |
 | 3.8. | 8    | About osiossa taistelua pyörivän tekstin aikaansaamiseksi |
 | 4.8. | 1    | Ikonien metsästystä ja lopuksi päätös ikonikirjaston asentamisesta |
-| 10.8. | 5    | Ikonien sijoittelua, css muokkauksia ja About osion ensimmäinen vaihe |
-| yht   | 68 | | 
+| 10.8. | 5    | Ikonien sijoittelua, css muokkauksia ja Contact osion ensimmäinen vaihe |
+| 11.8. | 6    | Tutustuminen s-postin välityspalveluihin ja EmailJS:n käyttöönotto, Contact oision viimeistely |
+| yht   | 74 | | 
