@@ -17,4 +17,5 @@
 | 4.8. | 1    | Ikonien metsästystä ja lopuksi päätös ikonikirjaston asentamisesta |
 | 10.8. | 5    | Ikonien sijoittelua, css muokkauksia ja Contact osion ensimmäinen vaihe |
 | 11.8. | 6    | Tutustuminen s-postin välityspalveluihin ja EmailJS:n käyttöönotto, Contact oision viimeistely |
+| 12.8. |  -  | Footer osio ja tuotantoon laitto |
 | yht   | 74 | | 
