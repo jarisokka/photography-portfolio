@@ -8,7 +8,7 @@ on:
 jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-18.04
-      steps:
+    steps:
       - name: Say hello
         run: |
           echo "Hello World!"
