@@ -5,7 +5,7 @@
 
 -Tulossa myöhemmin
 
-Sovellusta tämän hetkistä versiota voi testata Herokussa:
+Sovelluksen tämän hetkistä versiota voi testata Herokussa:
 
 https://jari-portfolio.herokuapp.com/
 

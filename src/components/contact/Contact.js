@@ -1,8 +1,8 @@
-import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import { useRef } from 'react'
+import emailjs from 'emailjs-com'
 import './Contact.css'
 import mail from '../../assets/images/mail.jpg'
-import env from "react-dotenv";
+import env from "react-dotenv"
 
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(env.TEMPLATE_ID)
     emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
       .then((result) => {
         alert('Your message has been delivered.')
