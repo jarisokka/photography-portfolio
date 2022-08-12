@@ -3,12 +3,15 @@ name: Deployment pipeline
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-18.04
     steps:
+      - name: Say hello
+        run: |
+          echo "Hello World!"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
