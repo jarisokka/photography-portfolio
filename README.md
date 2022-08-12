@@ -5,9 +5,9 @@
 
 -Tulossa myöhemmin
 
-Sovellusta voi testata Herokussa:
+Sovellusta tämän hetkistä versiota voi testata Herokussa:
 
--Tulossa myöhemmin
+https://jari-portfolio.herokuapp.com/
 
 ## Työaikakirjanpito
 
