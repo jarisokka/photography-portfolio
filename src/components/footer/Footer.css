@@ -1,0 +1,33 @@
+footer {
+  text-align: center;
+
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-socials a {
+  color: var(--color-navigation-tx);
+  font-size: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-0.3rem);
+}
+
+.copyright {
+  font-size: large;
+  color: var(--color-navigation-tx);
+}
+
+.the-end {
+  background: linear-gradient(180deg, var(--color-background), rgb(191, 196, 199));
+  width: 100%;
+  height: 3rem;
+}
