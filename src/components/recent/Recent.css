@@ -1,18 +1,19 @@
 .recent-wrapper {
-  display: grid;
+  display: flex;
+  padding-top: 1rem;
 }
 
 .styiling {
   position: absolute;
   place-self: start;
   background-color: var(--color-primary);
-  width: 40%;
+  width: 35%;
   height: 65%;
 }
 
 .recent {
   margin-top: 1.5rem;
-  place-self: end;
+  margin-left: 3rem;
   width: 90%;
 }
 
@@ -39,7 +40,7 @@
 
 .details {
   position: absolute;
-  right: 8%;
+  right: 2rem;
   padding: 2rem;
   border-radius: 25px;
   background: var(--color-navigation-bg);
@@ -65,32 +66,33 @@
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
   .recent-wrapper {
-    grid-template-rows: 1fr;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+
+  }
+
+  .recent {
+    margin-left: 0rem;
     width: 100%;
   }
 
-  .heading {
-    padding-left: 1.5rem;
+  .styiling {
+    display: none;
   }
-
-  .recent {
-    padding: 0rem;
-    width: 90%;
-  }
-
-  .details {
-    padding: 1rem; 
-  }
-
 }
 
 @media screen and (max-width: 600px) { 
-  .recent {
-    width: 93%;
-  }
   .details {
-    padding: 0.5rem;
+    left: 2rem;
+  }
+
+  @keyframes slide-up {
+    0% {
+      visibility: visible;
+      top: 140%
+    }
+    100% {
+      visibility: visible;
+      top: 110%
+    }
   }
 }

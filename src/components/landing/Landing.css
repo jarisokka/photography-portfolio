@@ -47,7 +47,7 @@
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
   .container-title {
-    top: 10%;
+    top: 20%;
     grid-template-columns: 800px;
     grid-auto-rows: 70px;
   }
@@ -58,35 +58,38 @@
 }
 
 @media screen and (max-width: 800px){
+  .cover img {
+    object-position: 40% 0;
+  }
+
   .container-title {
     grid-template-columns: 600px;
     grid-auto-rows: 50px;
   }
   .container-title h1 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     -webkit-text-stroke: 1px var(--color-navigation-tx);
   }
 }
 
 @media screen and (max-width: 600px) {
   .container-title {
-    top: 5%;
     grid-template-columns: 500px;
     grid-auto-rows: 40px;
   }
   .container-title h1 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .container-title {
-    grid-template-columns: 300px;
-    grid-auto-rows: 28px;
+    grid-template-columns: 400px;
   }
+
   .container-title h1 {
     color: var(--color-title);
-     font-size: 1.2rem;
+     font-size: 1.7rem;
     -webkit-text-stroke: 0.5px var(--color-navigation-tx);
   }
 }

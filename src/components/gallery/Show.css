@@ -1,7 +1,7 @@
 .display {
   display: block;
   position: fixed;
-  padding-top: 3%;
+  padding-top: 3rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,7 +12,7 @@
 .image-holder {
   display: flex;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 6rem;
   max-width: 82%;
 }
 
@@ -34,7 +34,6 @@
 }
 
 .right-button {
-  margin-top: -3%;
   flex: 5%;
   padding-left: 1rem;
   cursor: pointer;
@@ -48,7 +47,7 @@
   cursor: pointer;
   color: white;
   font-size: 30px;
-  margin-top: 6%;
+  margin-top: 4rem;
   padding: 1rem;
   margin-left: 90%;
   align-content: center;
@@ -72,4 +71,38 @@
   height: 100px;
   margin: 0.5rem;
   border: none;
+}
+
+/* ========= DEVICE SIZE ======= */
+@media screen and (max-width: 1024px){
+  .display {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-holder {
+    padding-left: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    max-width: 79%;
+  }
+
+  .close-button {
+    margin-top: 2rem;
+    margin-left: 85%;
+  }
+
+  .left-button {
+    flex: 4%;
+    padding-right: 0.4rem;
+    font-size: 30px;
+  }
+
+  .right-button {
+    flex: 4%;
+    padding-left: 0.4rem;
+    font-size: 30px;
+  }
+
 }

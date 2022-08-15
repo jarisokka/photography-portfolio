@@ -17,7 +17,7 @@ const Gallery = () => {
         <div className='title'>
         <h2>Gallery</h2>
         <hr></hr>
-        <p>Praesent vel felis lectus. Nullam volutpat quam mi, non convallis quam mattis aliquet.</p>
+        <p>Welcome to my photo gallery. I have collected here some of my favorite pictures from my journey.</p>
         </div>
         <div className='gallery-wrapper'>
         {galleryData.map(({id, coverimage, gategory, title, description, images}) => {

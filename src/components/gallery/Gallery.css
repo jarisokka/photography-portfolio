@@ -46,7 +46,6 @@
   background: white;
   border: 1px solid var(--color-navigation-bg);
   padding: 1.5rem;
-  /* border-radius: 1.1rem 0 1.1rem 1.1rem; */
   transform: translate(0, -50%);
   box-shadow: var(--shadow);
 }
@@ -84,11 +83,23 @@
     grid-template-columns: 1fr; 
     gap: 0.5rem;
   }
+
+  .gallery-desc {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .gallery-wrapper {
     gap: 0rem;
+  }
+
+  .gallery {
+    padding: 0rem;
+  }
+
+  .gallery-desc {
+    width: 100%;
   }
 
 }

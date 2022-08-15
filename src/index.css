@@ -13,8 +13,6 @@
 :root {
   --color-primary: rgba(191, 196, 199, 0.5);
   --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-secondary: #ff0000;
-  --color-secondary-variant: rgba(223, 186, 176, 0.4);
   --color-navigation-bg: rgba(255, 255, 255, 0.447);
   --color-navigation-tx:rgb(38, 67, 92);
   --color-navigation-tx-variant:rgb(14, 24, 32);
@@ -43,7 +41,6 @@ html {
   display: none;
 }
 
-
 /* ========= GENERAL STYLES ======= */
 .background {
   background-color: var(--color-primary);
@@ -60,7 +57,7 @@ html {
   align-items: center;
   flex-direction: column;
   padding-bottom: 0.8rem;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .title h2 {
@@ -92,13 +89,10 @@ p {
   font-size: 18px;
 }
 
-
-
 section {
   margin-top: 6rem;
   min-height: 100vh;
 }
-
 
 /* ========= MEDIUM DEVICES ========= */
 @media screen and (max-width: 1024px){
@@ -120,6 +114,10 @@ section {
   
   section {
     margin-top: 6rem;
+  }
+
+  .title {
+    padding-top: 8rem;
   }
 }
 

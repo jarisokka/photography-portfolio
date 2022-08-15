@@ -1,22 +1,27 @@
 .about-wrapper {
   display: grid;
-  grid-template-columns: 65% 20%;
+  grid-template-columns: 65% 35%;
   grid-template-areas:
     'desc pic'
     'desc social';
 }
 
+.bg-styling {
+  grid-area: pic;
+  background-color: var(--color-primary);
+  width: 50%;
+  height: 80%;
+}
+
 .profile {
   grid-area: pic;
-  align-self: center;
-  padding: 4rem;
-  background-color: var(--color-primary);
+  display: flex;
 }
 
 .profile img {
   object-fit: cover;
-  width: 350px;
-  height: 450px;
+  width: 85%;
+  margin: 2rem;
   border: 1px solid var(--color-navigation-bg);
   box-shadow: var(--shadow);
 }
@@ -33,6 +38,7 @@
   grid-area: social;
   display: flex;
   padding-top: 1rem;
+  margin-right: 2rem;
   justify-content: flex-end;
 }
 
@@ -51,6 +57,7 @@
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  min-height: 24rem;
   justify-content: center;
 }
 
@@ -68,7 +75,7 @@
 }
 
 .instagram_btn {
-  margin-top: 6rem;
+  margin-top: min(6rem);
   display: grid;
   place-items: center;
   width: 12rem;
@@ -107,5 +114,49 @@
 @keyframes spinText {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ========= DEVICE SIZE ======= */
+@media screen and (max-width: 1024px){
+  .instagram {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    min-height: 18rem;
+  }
+  
+  .instagram_btn {
+    transform: translate(0, -25%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'desc'
+    'pic'
+    'social';
+  }
+
+  .about-desc {
+    justify-self: center;
+    width: 98%;
+  }
+
+  .bg-styling {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .profile img {
+    margin-left: 3rem;
+    width: 80%;
+  }
+
+  .social {
+    padding-top: 1rem;
+    margin-right: 0rem;
+    justify-content: center;
   }
 }

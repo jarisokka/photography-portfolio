@@ -29,7 +29,8 @@ const About = () => {
           <br></br>
           <p>If you have any queries relating to my work, please don`t hesitate to contact me. I am also open for collaborations and work offers.</p>
           </div>
-          <div className='profile'>
+          <div className='bg-styling'></div>
+          <div className='profile'>            
             <img src={profile} alt='profile'/>
           </div>
           <div className='social'>
