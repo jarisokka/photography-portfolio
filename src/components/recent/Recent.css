@@ -14,28 +14,39 @@
 .recent {
   margin-top: 1.5rem;
   margin-left: 3rem;
-  width: 90%;
+  width: 100%;
 }
 
-.recent img {
-  display: block;
+.image-container {
+  display: flex;
+}
+
+.image-container img {
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-navigation-bg);
+}
+
+.vertical {
+  flex: 0.555;
+  padding-left: 5rem;
+}
+
+.horizontal {
+  flex: 1.5;
 }
 
 .slide {
   opacity: 0;
   transform: translateX(50%);
   transition: all 0.6s ease-in-out;
-  box-shadow: var(--shadow);
 }
 
 .current {
   opacity: 1;
   transform: translateX(0%);
-  transition: all 0.6s ease-in-out;
-  border: 1px solid var(--color-navigation-bg);
-  box-shadow: var(--shadow);
+  transition: all 0.6s ease-in-out; 
 }
 
 .details {
@@ -59,20 +70,21 @@
   100% {
     visibility: visible;
     top: 75%
-  }
-  
+  } 
 }
 
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
   .recent-wrapper {
     padding-top: 0rem;
-
   }
 
   .recent {
     margin-left: 0rem;
-    width: 100%;
+  }
+
+  .vertical {
+    padding-left: 2rem;
   }
 
   .styiling {
@@ -80,7 +92,19 @@
   }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
+  .image-container {
+    justify-content: center;
+  }
+  .vertical {
+    padding-left: 0.3rem;
+    flex: 0.55;
+  }
+
+  .horizontal {
+    padding-left: 0.3rem;
+  }
+
   .details {
     left: 2rem;
   }

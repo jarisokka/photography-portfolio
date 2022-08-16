@@ -19,4 +19,5 @@
 | 11.8. | 6    | Tutustuminen s-postin välityspalveluihin ja EmailJS:n käyttöönotto, Contact oision viimeistely |
 | 12.8. |  3,5  | Footer osio ja tuotantoon laitto. Tuotannon env:t aiheutti haasteita |
 | 16.8. |  5  | Sivujen muokkausta mobiili ystävälliseksi |
-| yht   | 82,5 | | 
+| 17.8. |  4  | Muokattu Recent ja Show osioita niin, että voidaan myös käyttää vertikaali muodossa olevia kuvia |
+| yht   | 86,5 | | 

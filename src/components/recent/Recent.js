@@ -32,7 +32,11 @@ const Recent = () => {
                   <div className={index === currentSlide ? 'current' : 'slide'} key={index}>
                     {index === currentSlide && (
                       <div>
-                        <img src={data.image} alt={data.id}/>
+                        <div className='image-container'>
+                          <div className={data.alignment === 'horizontal' ? 'horizontal' : 'vertical'}>
+                            <img src={data.image} alt={data.id}/>
+                          </div>
+                        </div>
                         <div className='details'>
                           <h3>{data.title}</h3>
                           <p>Settings: {data.settings}</p>

@@ -23,15 +23,19 @@ const Show = ({showGallery, setShowGallery}) => {
   return (
     <div className='display close' onClick={handleClick}>
       <div className='close close-button'> X</div>
-      <div className='image-holder'>
+      <div className='show-wrapper'>
         <div className='left-button' onClick={handleToLeft}> <AiOutlineLeft /></div>
-        <img src={showGallery[selection]} alt={selection}/>
-        <div className='right-button' onClick={handleToRight}> <AiOutlineRight /></div>       
+        <div className='image-holder'>      
+          <div className={showGallery[selection].alignment === 'horizontal' ? 'slide-horizontal' : 'slide-vertical'}>
+            <img src={showGallery[selection].image} alt={showGallery[selection].id}/>
+          </div>                    
+        </div>
+        <div className='right-button' onClick={handleToRight}> <AiOutlineRight /></div>
       </div>
       <div className='all-images'>
-        {showGallery.map((image, index) => (
+        {showGallery.map((data, index) => (
           <img style={{border: selection === index ? '2px solid white' : ''}}
-          key={index} src={image} alt={image}
+          key={index} src={data.image} alt={data.image}
           onClick={() => setSelection(index)}/>
         ))}
       </div>
