@@ -34,7 +34,7 @@ const Recent = () => {
                       <div>
                         <div className='image-container'>
                           <div className={data.alignment === 'horizontal' ? 'horizontal' : 'vertical'}>
-                            <img src={data.image} alt={data.id}/>
+                            <img src={data.image} alt={data.alt}/>
                           </div>
                         </div>
                         <div className='details'>

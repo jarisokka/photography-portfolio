@@ -45,7 +45,7 @@ const Landing = () => {
   return (
     <div id='home'>
       <div className='cover'>
-        <img src={kansi} alt='kansi'/>
+        <img src={kansi} alt='cover_image'/>
       </div>
       <div className='container'>
         <div className='container-title'>       

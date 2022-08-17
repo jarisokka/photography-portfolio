@@ -1,6 +1,6 @@
-import kuva1 from '..//images/recent/test1.jpg'
-import kuva2 from '../images/recent/test2.jpg'
-import kuva3 from '../images/recent/test3.jpg'
+import kuva1 from '../images/test1.jpg'
+import kuva2 from '../images/test2.jpg'
+import kuva3 from '../images/test3.jpg'
 
 export const landscapeData = [
   {
