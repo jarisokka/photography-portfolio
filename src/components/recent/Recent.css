@@ -1,6 +1,8 @@
 .recent-wrapper {
   display: flex;
-  padding-top: 1rem;
+  padding-left: 6rem;
+  margin-left: 2rem;
+  width: 85%;
 }
 
 .styiling {
@@ -8,7 +10,7 @@
   place-self: start;
   background-color: var(--color-primary);
   width: 35%;
-  height: 65%;
+  height: 60%;
 }
 
 .recent {
@@ -29,7 +31,7 @@
 }
 
 .vertical {
-  flex: 0.555;
+  flex: 0.58;
   padding-left: 5rem;
 }
 
@@ -69,14 +71,16 @@
   }
   100% {
     visibility: visible;
-    top: 75%
+    top: 70%
   } 
 }
 
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
   .recent-wrapper {
-    padding-top: 0rem;
+    width: 90%;
+    padding-left: 4rem;
+    margin-left: 1rem;
   }
 
   .recent {
@@ -92,7 +96,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  @keyframes slide-up {
+    0% {
+      visibility: visible;
+      top: 90%
+    }
+    100% {
+      visibility: visible;
+      top: 60%
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .recent-wrapper {
+    width: 100%;
+    padding-left: 0rem;
+    margin-left: 0rem;
+  }
+
   .image-container {
     justify-content: center;
   }

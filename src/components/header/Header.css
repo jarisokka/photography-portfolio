@@ -1,5 +1,5 @@
 .container-nav {
-  z-index: 9998;
+  z-index: 9000;
   display: flex;
   position: fixed;
   width: var(--container-width-lg);
@@ -107,7 +107,7 @@
   .mobile-button {
     display: block;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9001;
     padding: 1rem;
     position: absolute;
     top: 10px;

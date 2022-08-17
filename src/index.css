@@ -18,6 +18,8 @@
   --color-navigation-tx-variant:rgb(14, 24, 32);
   --color-title: rgba(255, 255, 255, 0.4);
   --color-background: rgb(249, 249, 249);
+  --color-background-show: rgb(27, 27, 27);
+  --color-background-show-variant: rgb(62, 62, 62);
 
   --container-width-lg: 90%;
   --container-width-md: 95%;

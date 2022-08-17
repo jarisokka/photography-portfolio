@@ -1,35 +1,39 @@
-import kuva1 from '..//images/recent/test.jpg'
-import kuva2 from '..//images/recent/test1.jpg'
-import kuva3 from '../images/recent/test2.jpg'
-import kuva4 from '../images/recent/test3.jpg'
+import img1 from '../images/recent/image1.jpg'
+import img2 from '../images/recent/image2.jpg'
+import img3 from '../images/recent/image3.jpg'
+import img4 from '../images/recent/image4.jpg'
 
 export const sliderData = [
   {
     id: 1,
-    image: kuva1,
-    title: 'Picture one',
-    settings: '800mm f/5.6 1/3200s ISO2000',
-    alignment: 'vertical' 
+    image: img1,
+    title: 'Small details',
+    settings: '100mm f/2.8 1/160s ISO100',
+    alignment: 'horizontal' ,
+    alt: 'macro plant'
   },
   {
     id: 2,
-    image: kuva2,
-    title: 'Picture two',
-    settings: '800mm f/5.6 1/3200s ISO2000',
-    alignment: 'horizontal' 
+    image: img2,
+    title: 'Sunrise magic',
+    settings: '16mm f/14 0.4s ISO125',
+    alignment: 'horizontal',
+    alt: 'sunrise colors' 
   },
   {
     id: 3,
-    image: kuva3,
-    title: 'Picture three',
-    settings: '800mm f/5.6 1/3200s ISO2000',
-    alignment: 'horizontal'
+    image: img3,
+    title: 'Sunrise pond',
+    settings: '16mm f/14 1/320s ISO100',
+    alignment: 'horizontal',
+    alt: 'sunrise rays'
   },
   {
     id: 4,
-    image: kuva4,
-    title: 'Picture four',
-    settings: '800mm f/5.6 1/3200s ISO2000',
-    alignment: 'horizontal'
+    image: img4,
+    title: 'Red beauty',
+    settings: '100mm f/4.5 1/100s ISO320',
+    alignment: 'horizontal',
+    alt: 'flower field'
   }
 ]
