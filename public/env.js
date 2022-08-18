@@ -42,7 +42,7 @@ window.env = {
   "npm_config_user_agent": "npm/8.12.2 node/v16.8.0 win32 x64 workspaces/false",
   "npm_execpath": "C:\\Users\\jaris\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
   "npm_lifecycle_event": "start",
-  "npm_lifecycle_script": "react-dotenv && react-scripts start \"eslint\"",
+  "npm_lifecycle_script": "react-dotenv && react-scripts start",
   "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
   "npm_package_json": "D:\\Hyöty\\Ohjelmointi\\JavaScript\\nettisivut\\photography-portfolio\\package.json",
   "npm_package_name": "photography-portfolio",
