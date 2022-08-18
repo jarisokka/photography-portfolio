@@ -6,16 +6,16 @@ export const landscapeData = [
   {
     id: 2,
     image: kuva1,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   },
   {
     id: 3,
     image: kuva2,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   },
   {
     id: 4,
     image: kuva3,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   }
 ]

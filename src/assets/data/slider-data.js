@@ -18,7 +18,7 @@ export const sliderData = [
     title: 'Sunrise magic',
     settings: '16mm f/14 0.4s ISO125',
     alignment: 'horizontal',
-    alt: 'sunrise colors' 
+    alt: 'sunrise colors'
   },
   {
     id: 3,

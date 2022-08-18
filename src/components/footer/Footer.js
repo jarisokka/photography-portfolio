@@ -1,6 +1,6 @@
 import './Footer.css'
-import {BsInstagram, BsFacebook} from 'react-icons/bs'
-import {Fa500Px} from 'react-icons/fa'
+import { BsInstagram, BsFacebook } from 'react-icons/bs'
+import { Fa500Px } from 'react-icons/fa'
 
 const Footer = () => {
   return (

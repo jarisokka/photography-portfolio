@@ -13,33 +13,33 @@ const Gallery = () => {
   return (
     <section id='gallery'>
       <div className='background'>
-      <div className='container'>
-        <div className='title'>
-        <h2>Gallery</h2>
-        <hr></hr>
-        <p>Welcome to my photo gallery. I have collected here some of my favorite pictures from my journey.</p>
+        <div className='container'>
+          <div className='title'>
+            <h2>Gallery</h2>
+            <hr></hr>
+            <p>Welcome to my photo gallery. I have collected here some of my favorite pictures from my journey.</p>
+          </div>
+          <div className='gallery-wrapper'>
+            {galleryData.map(({ id, coverimage, gategory, title, description, images }) => {
+              return (
+                <div key={id} className='gallery'>
+                  <div className='gallery-image'>
+                    <img src={coverimage} alt={id} onClick={() => handleClick(images)}/>
+                  </div>
+                  <div className='gallery-gategory'>
+                    <h4>{gategory}</h4>
+                  </div>
+                  <div className='gallery-desc'>
+                    <h3>{title}</h3>
+                    <hr className='line'></hr>
+                    <p>{description}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          {showGallery && (<Show showGallery={showGallery} setShowGallery={setShowGallery}/>)}
         </div>
-        <div className='gallery-wrapper'>
-        {galleryData.map(({id, coverimage, gategory, title, description, images}) => {
-          return (
-            <div key={id} className='gallery'>
-              <div className='gallery-image'>
-                <img src={coverimage} alt={id} onClick={() => handleClick(images)}/>
-              </div>
-              <div className='gallery-gategory'>
-                <h4>{gategory}</h4>
-              </div>
-              <div className='gallery-desc'>
-                <h3>{title}</h3>
-                <hr className='line'></hr>
-                <p>{description}</p>
-              </div>
-            </div>
-          )
-        })}
-        </div>
-        {showGallery && (<Show showGallery={showGallery} setShowGallery={setShowGallery}/>)}
-      </div>
       </div>
     </section>
   )

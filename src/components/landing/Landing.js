@@ -12,9 +12,9 @@ const Landing = () => {
 
   useEffect(() => {
     let timer = setInterval(() => tick(), time)
- 
+
     return () => {clearInterval(timer)}
-    })
+  })
 
   const tick = () => {
     setTime(100)
@@ -48,7 +48,7 @@ const Landing = () => {
         <img src={kansi} alt='cover_image'/>
       </div>
       <div className='container'>
-        <div className='container-title'>       
+        <div className='container-title'>
           <div>
             <h1>Welcome to</h1>
           </div>
@@ -57,7 +57,7 @@ const Landing = () => {
           </div>
           <div>
             <hr></hr>
-            <a href={`#gallery`}>To my gallery</a>
+            <a href={'#gallery'}>To my gallery</a>
           </div>
         </div>
       </div>

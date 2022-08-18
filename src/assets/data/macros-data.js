@@ -7,21 +7,21 @@ export const macroData = [
   {
     id: 1,
     image: kuva1,
-    alignment: 'vertical' 
+    alignment: 'vertical'
   },
   {
     id: 2,
     image: kuva2,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   },
   {
     id: 3,
     image: kuva3,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   },
   {
     id: 4,
     image: kuva4,
-    alignment: 'horizontal' 
+    alignment: 'horizontal'
   }
 ]

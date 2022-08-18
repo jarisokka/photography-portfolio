@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './Show.css'
-import {AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
-const Show = ({showGallery, setShowGallery}) => {
+const Show = ({ showGallery, setShowGallery }) => {
 
   const [ selection, setSelection ] = useState(0)
 
@@ -25,18 +25,18 @@ const Show = ({showGallery, setShowGallery}) => {
       <div className='close close-button'> X</div>
       <div className='show-wrapper'>
         <div className='left-button' onClick={handleToLeft}> <AiOutlineLeft /></div>
-        <div className='image-holder'>      
+        <div className='image-holder'>
           <div className={showGallery[selection].alignment === 'horizontal' ? 'slide-horizontal' : 'slide-vertical'}>
             <img src={showGallery[selection].image} alt={showGallery[selection].id}/>
-          </div>                    
+          </div>
         </div>
         <div className='right-button' onClick={handleToRight}> <AiOutlineRight /></div>
       </div>
       <div className='all-images'>
         {showGallery.map((data, index) => (
-          <img style={{border: selection === index ? '2px solid white' : ''}}
-          key={index} src={data.image} alt={data.image}
-          onClick={() => setSelection(index)}/>
+          <img style={{ border: selection === index ? '2px solid white' : '' }}
+            key={index} src={data.image} alt={data.image}
+            onClick={() => setSelection(index)}/>
         ))}
       </div>
     </div>
