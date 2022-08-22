@@ -1,7 +1,7 @@
 import './About.css'
 import profile from '../../assets/images/profiili.jpg'
 import insta from '../../assets/images/instagrid.jpg'
-import { BsInstagram, BsFacebook } from 'react-icons/bs'
+import { BsInstagram, BsFacebook, BsYoutube } from 'react-icons/bs'
 import { Fa500Px } from 'react-icons/fa'
 
 const About = () => {
@@ -34,9 +34,10 @@ const About = () => {
             <img src={profile} alt='profile'/>
           </div>
           <div className='social'>
-            <a href='https://instagram.com' target='_blank' rel="noreferrer"><BsInstagram/></a>
-            <a href='https://500px.com' target='_blank' rel="noreferrer"><Fa500Px/></a>
-            <a href='https://facebook.com' target='_blank' rel="noreferrer"><BsFacebook/></a>
+            <a href='https://instagram.com/jarisokka' target='_blank' rel="noreferrer"><BsInstagram/></a>
+            <a href='https://500px.com/jarisokka' target='_blank' rel="noreferrer"><Fa500Px/></a>
+            <a href='https://facebook.com/jarisokka' target='_blank' rel="noreferrer"><BsFacebook/></a>
+            <a href='https://www.youtube.com/channel/UCrfBdIqXUqPBF2tdBc3cURA' target='_blank' rel="noreferrer"><BsYoutube/></a>
           </div>
         </div>
       </div>

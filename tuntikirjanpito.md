@@ -21,5 +21,6 @@
 | 15.8. |  5  | Sivujen muokkausta mobiili ystävälliseksi |
 | 16.8. |  4  | Muokattu Recent ja Show osioita niin, että voidaan myös käyttää vertikaali muodossa olevia kuvia |
 | 17.8. |  3,5  | Sekalaista: SEO asioihin perehtymistä, lopullisen sisällön lisäämistä, css muokkausta|
-| 18.8. |  2,5  | Lintin käyttöön otto sekä uuden logon toteutus|
-| yht   | 92,5 | | 
+| 18.8. |  2,5  | Lintin käyttöönotto sekä uuden logon toteutus|
+| 22.8. |  4  | Sekalaista: lisätty sisältöä, linkkejä, dokumentaatiota ja muokattu css:ää|
+| yht   | 96,5 | | 

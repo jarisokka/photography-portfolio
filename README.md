@@ -13,7 +13,7 @@ Sivusto on pyritty rakentamaan mahdollisimman pitkälle ilman ylimääräisiä k
 
 ### Dokumentaatio
 
--Tähän sovelluksen rakenne
+[Dokumentaatio](./dokumentaatio.md)
 
 ### LIVE
 

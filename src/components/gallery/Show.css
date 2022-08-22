@@ -27,14 +27,14 @@
 
 .image-holder img {
   max-width: 100%;
-  height: auto;
+  max-height: 80vh;
   margin-top: 2rem;
   margin-bottom: 1rem;
   border: 2px solid var(--color-background);
 }
 
 .slide-vertical {
-  flex: 0.535;
+  flex: 0.912;
 }
 
 .slide-horizontal {
@@ -71,6 +71,7 @@
 
 .all-images {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   cursor: pointer;
