@@ -22,7 +22,7 @@ const Recent = () => {
         <div className='title'>
           <h2>Recent</h2>
           <hr></hr>
-          <p>Here are some of my recent pictures, test four</p>
+          <p>Here are some of my recent pictures, test five</p>
         </div>
         <div className='recent-wrapper'>
           <div className='styiling'></div>
