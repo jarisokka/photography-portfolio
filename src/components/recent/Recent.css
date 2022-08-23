@@ -1,8 +1,8 @@
 .recent-wrapper {
   display: flex;
-  padding-left: 6rem;
-  margin-left: 2rem;
-  width: 85%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
 }
 
 .styiling {
@@ -13,7 +13,7 @@
   height: 60%;
 }
 
-.recent {
+.recent-slide {
   margin-top: 1.5rem;
   margin-left: 3rem;
   width: 100%;
@@ -80,10 +80,9 @@
   .recent-wrapper {
     width: 90%;
     padding-left: 4rem;
-    margin-left: 1rem;
   }
 
-  .recent {
+  .recent-slide {
     margin-left: 0rem;
   }
 
@@ -113,7 +112,6 @@
   .recent-wrapper {
     width: 90%;
     padding-left: 2rem;
-    margin-left: 0rem;
   }
 
   .image-container {

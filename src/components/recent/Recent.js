@@ -26,7 +26,7 @@ const Recent = () => {
         </div>
         <div className='recent-wrapper'>
           <div className='styiling'></div>
-          <div className='recent'>
+          <div className='recent-slide'>
             {sliderData.map((data, index) => {
               return (
                 <div className={index === currentSlide ? 'current' : 'slide'} key={index}>
