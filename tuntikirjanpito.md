@@ -23,4 +23,5 @@
 | 17.8. |  3,5  | Sekalaista: SEO asioihin perehtymistä, lopullisen sisällön lisäämistä, css muokkausta|
 | 18.8. |  2,5  | Lintin käyttöönotto sekä uuden logon toteutus|
 | 22.8. |  4  | Sekalaista: lisätty sisältöä, linkkejä, dokumentaatiota ja muokattu css:ää|
-| yht   | 96,5 | | 
+| 23.8. |  3,5  | Kännykässä sivusto hyppi johtuen recent osiosta, tämän ongelman korjaamista |
+| yht   | 100 | | 

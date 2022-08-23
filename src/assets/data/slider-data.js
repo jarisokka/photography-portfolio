@@ -3,6 +3,7 @@ import img2 from '../images/recent/image2.jpg'
 import img3 from '../images/recent/image3.jpg'
 import img4 from '../images/recent/image4.jpg'
 
+
 export const sliderData = [
   {
     id: 1,
