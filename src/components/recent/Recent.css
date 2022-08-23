@@ -111,8 +111,8 @@
 
 @media screen and (max-width: 600px) {
   .recent-wrapper {
-    width: 100%;
-    padding-left: 0rem;
+    width: 90%;
+    padding-left: 2rem;
     margin-left: 0rem;
   }
 
