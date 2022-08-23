@@ -77,11 +77,6 @@
 
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
-  .recent-wrapper {
-    width: 90%;
-    padding-left: 4rem;
-  }
-
   .recent-slide {
     margin-left: 0rem;
   }
@@ -109,11 +104,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .recent-wrapper {
-    width: 90%;
-    padding-left: 2rem;
-  }
-
   .image-container {
     justify-content: center;
   }
