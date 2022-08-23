@@ -1,8 +1,7 @@
 .recent-wrapper {
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  min-height: 100vh;
 }
 
 .styiling {
