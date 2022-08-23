@@ -1,5 +1,6 @@
 .recent-wrapper {
   display: block;
+  padding-top: 1rem;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -14,17 +15,19 @@
 }
 
 .recent-slide {
-
+  padding-top: 1.5rem;
+  padding-left: 2.5rem;
   width: 100%;
 }
 
 .image-container {
   display: flex;
+  width: 97%;
 }
 
 .image-container img {
   width: 100%;
-  /*height: auto;*/
+  height: auto;
   box-shadow: var(--shadow);
   border: 1px solid var(--color-navigation-bg);
 }
@@ -52,7 +55,7 @@
 
 .details {
   position: absolute;
-  right: 2rem;
+  right: 5.5rem;
   padding: 2rem;
   border-radius: 25px;
   background: var(--color-navigation-bg);
@@ -77,7 +80,10 @@
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
   .recent-slide {
-    margin-left: 0rem;
+    padding-left: 1.5rem;
+  }
+  .details {
+    right: 3rem;
   }
 /*
   .vertical {
@@ -106,6 +112,9 @@
   .image-container {
     justify-content: center;
   }
+  .recent-slide {
+    padding-left: 0.8rem;
+  }
   /*
   .vertical {
     padding-left: 0.3rem;
@@ -117,7 +126,7 @@
   }
 */
   .details {
-    left: 0rem;
+    left: 2rem;
   }
 
   @keyframes slide-up {
