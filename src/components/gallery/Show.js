@@ -35,7 +35,7 @@ const Show = ({ showGallery, setShowGallery }) => {
       <div className='all-images'>
         {showGallery.map((data, index) => (
           <img style={{ border: selection === index ? '2px solid white' : '' }}
-            key={index} src={data.image} alt={data.image}
+            key={index} src={data.image} alt={data.alt}
             onClick={() => setSelection(index)}/>
         ))}
       </div>

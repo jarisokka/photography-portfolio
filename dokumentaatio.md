@@ -35,7 +35,13 @@ photography-portfolio\src
 |---assets
 |   ---data
 |   ---images
+|       |---birds
+|       |---finland
+|       |---macros
+|       |---mammals
 |       |---recent
+|       |---winter
+|       |---world
 |---components
     ---about
     ---contact
@@ -46,7 +52,7 @@ photography-portfolio\src
     ---recent
 ```
 
-Kansioon `assets` on koottu käytettävät kuvat sekä niihin liittyvät tiedot. Nämä on jaettu alikansioihin `data` ja `images`. Kuvat on lisäksi jaoteltu omiin alikansioihinsa.
+Kansioon `assets` on koottu käytettävät kuvat sekä niihin liittyvät tiedot. Nämä on jaettu alikansioihin `data` ja `images`. Kuvat on lisäksi jaoteltu omiin alikansioihinsa. Gallerian tietoja hallitaan `gallery-data.js` kautta, johon kootaan jokaisen yksittäisen gallerian tiedot.
 
 Kansio `components` sisältään jokaisen osa-alueen oman kansion, jossa tämän osuuden toiminnallisuus ja tyylien määrittely.
 

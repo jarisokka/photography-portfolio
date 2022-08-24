@@ -24,4 +24,5 @@
 | 18.8. |  2,5  | Lintin käyttöönotto sekä uuden logon toteutus|
 | 22.8. |  4  | Sekalaista: lisätty sisältöä, linkkejä, dokumentaatiota ja muokattu css:ää|
 | 23.8. |  3,5  | Kännykässä sivusto hyppi johtuen recent osiosta, tämän ongelman korjaamista |
-| yht   | 100 | | 
+| 24.8. |  3  | Kuvien lisäämistä galleriaan |
+| yht   | 103 | | 

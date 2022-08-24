@@ -1,9 +1,9 @@
-import kuva2 from '../images/test2.jpg'
 import { macroData } from './macros-data'
-import { animalData } from './animals-data'
-//import { landscapeData } from './landscapes-data'
 import { finlandData } from './finland-data'
 import { winterData } from './winter-data'
+import { worldData } from './world-data'
+import { birdsData } from './birds-data'
+import { mammalsData } from './mammals-data'
 
 export const galleryData = [
   {
@@ -24,6 +24,14 @@ export const galleryData = [
   },
   {
     id: 3,
+    coverimage: worldData[0].image,
+    gategory: 'Landscapes',
+    title: 'Around the world',
+    description: 'Some momerable sceneries from my travels',
+    images: worldData
+  },
+  {
+    id: 4,
     coverimage: macroData[0].image,
     gategory: 'Macros',
     title: 'Small and beautiful',
@@ -31,11 +39,19 @@ export const galleryData = [
     images: macroData
   },
   {
-    id: 4,
-    coverimage: kuva2,
+    id: 5,
+    coverimage: birdsData[3].image,
     gategory: 'Animals',
-    title: 'Pictures from Finland',
-    description: 'Here are some of my favorite landscape pictures from my home country.',
-    images: animalData
+    title: 'Fluffy beautifull birds',
+    description: 'Birds are so delicate and interesting creatures.',
+    images: birdsData
+  },
+  {
+    id: 6,
+    coverimage: mammalsData[1].image,
+    gategory: 'Animals',
+    title: 'Creatures of all size',
+    description: 'Furry creatures are fascinating and challenging to photograph',
+    images: mammalsData
   }
 ]
