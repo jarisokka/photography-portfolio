@@ -25,4 +25,5 @@
 | 22.8. |  4  | Sekalaista: lisätty sisältöä, linkkejä, dokumentaatiota ja muokattu css:ää|
 | 23.8. |  3,5  | Kännykässä sivusto hyppi johtuen recent osiosta, tämän ongelman korjaamista |
 | 24.8. |  3  | Kuvien lisäämistä galleriaan |
-| yht   | 103 | | 
+| 25.8. |  2,5  | About kohtaan kääntyvän tilauskortin lisäys |
+| yht   | 105,5 | | 

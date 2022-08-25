@@ -1,7 +1,8 @@
 .recent-wrapper {
   display: block;
   padding-top: 1rem;
-  width: 100%;
+  padding-left: 5rem;
+  width: 95%;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -79,6 +80,10 @@
 
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
+  .recent-wrapper {
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+  }
   .recent-slide {
     padding-left: 1.5rem;
   }
@@ -110,6 +115,8 @@
 
 @media screen and (max-width: 600px) {
   .recent-wrapper {
+    width: 100%;
+    padding-left: 0rem;
     padding-top: 0rem;
   }
   .image-container {

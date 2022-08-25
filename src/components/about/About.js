@@ -1,7 +1,7 @@
 import './About.css'
 import profile from '../../assets/images/profiili.jpg'
 import insta from '../../assets/images/instagrid.jpg'
-import { BsInstagram, BsFacebook, BsYoutube } from 'react-icons/bs'
+import { BsInstagram, BsFacebook, BsYoutube, BsShop } from 'react-icons/bs'
 import { Fa500Px } from 'react-icons/fa'
 
 const About = () => {
@@ -32,6 +32,17 @@ const About = () => {
           <div className='bg-styling'></div>
           <div className='profile'>
             <img src={profile} alt='profile'/>
+          </div>
+          <div className='order-links-card'>
+            <div className='front'>
+              <p>ORDER MY WORK</p>
+            </div>
+            <div className='back'>
+              <p>Here you can order my canvas boards</p>
+              <a href='https://taulucenter.fi/kuvaajat-2/' target='_blank' rel="noreferrer"><BsShop/> Finland</a>
+              <br></br>
+              <a href='https://vaszonkepnyomda.hu/author/jarisokka/' target='_blank' rel="noreferrer"><BsShop/> International</a>
+            </div>
           </div>
           <div className='social'>
             <a href='https://instagram.com/jarisokka' target='_blank' rel="noreferrer"><BsInstagram/></a>

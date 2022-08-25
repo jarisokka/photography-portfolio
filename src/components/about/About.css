@@ -3,6 +3,7 @@
   grid-template-columns: 65% 35%;
   grid-template-areas:
     'desc pic'
+    'desc order'
     'desc social';
 }
 
@@ -33,6 +34,70 @@
   padding: 2rem;
   box-shadow: var(--shadow);
 }
+
+.order-links-card {
+  grid-area: order;
+  height: 11rem;
+  margin-right: 2rem;
+  transform-style: preserve-3d;
+  transition: 1s ease-in-out;
+}
+
+.order-links-card:hover .front {
+  transform: rotateX(-180deg);
+}
+
+.order-links-card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.front {
+  position: absolute;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url(../../assets/images/card-front.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 1s ease-in-out;
+}
+
+.front p {
+  padding-top: 1.5rem;
+  color: var(--color-navigation-tx);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-shadow: 2px 2px var(--shadow);
+}
+
+.back {
+  background-color: var(--color-navigation-tx);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 1s ease-in-out;
+}
+
+.back p {
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  color: var(--color-background)
+}
+
+.back a {
+  cursor: pointer;
+  color: var(--color-background)
+}
+
 
 .social {
   grid-area: social;
@@ -119,6 +184,14 @@
 
 /* ========= DEVICE SIZE ======= */
 @media screen and (max-width: 1024px){
+  .order-links-card {
+    height: 8rem;
+  }
+  .front p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
   .instagram {
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -136,6 +209,7 @@
     grid-template-areas:
     'desc'
     'pic'
+    'order'
     'social';
   }
 
