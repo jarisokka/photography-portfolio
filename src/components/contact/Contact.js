@@ -11,7 +11,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-    console.log(env.TEMPLATE_ID)
     emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
       .then(() => {
         alert('Your message has been delivered.')

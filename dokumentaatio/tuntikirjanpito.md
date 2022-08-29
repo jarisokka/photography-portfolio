@@ -26,4 +26,5 @@
 | 23.8. |  3,5  | Kännykässä sivusto hyppi johtuen recent osiosta, tämän ongelman korjaamista |
 | 24.8. |  3  | Kuvien lisäämistä galleriaan |
 | 25.8. |  2,5  | About kohtaan kääntyvän tilauskortin lisäys |
-| yht   | 105,5 | | 
+| 29.8. |  6  | Domain palveluiden vertailua, sivujen ylläpitoalustojen vertailua, CloudFlare alustalle sivun asennus, oman osoitteen ostaminen ja käyttöönotto, dokumentaation kirjoittamista |
+| yht   | 111,5 | | 
