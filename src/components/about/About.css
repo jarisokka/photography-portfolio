@@ -228,6 +228,10 @@
     width: 80%;
   }
 
+  .order-links-card {
+    margin: 0.5rem;
+  }
+
   .social {
     padding-top: 1rem;
     margin-right: 0rem;

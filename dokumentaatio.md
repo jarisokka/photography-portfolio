@@ -52,7 +52,42 @@ photography-portfolio\src
     ---recent
 ```
 
-Kansioon `assets` on koottu käytettävät kuvat sekä niihin liittyvät tiedot. Nämä on jaettu alikansioihin `data` ja `images`. Kuvat on lisäksi jaoteltu omiin alikansioihinsa. Gallerian tietoja hallitaan `gallery-data.js` kautta, johon kootaan jokaisen yksittäisen gallerian tiedot. Recent osion kuvia hallitaan `slider-data.js` kautta.
+Kansioon `assets` on koottu käytettävät kuvat sekä niihin liittyvät tiedot. Nämä on jaettu alikansioihin `data` ja `images`. Kuvat on lisäksi jaoteltu omiin alikansioihinsa. Gallerian tietoja hallitaan `gallery-data.js` kautta.
+```bash
+export const galleryData = [
+  {
+    id: 1,
+    coverimage: valitse kansikuva tietokannasta,
+    gategory: 'Tyylilaji',
+    title: 'Otsikko',
+    description: 'My favorite summer and autumn landscapes from Finland.',
+    images: tietokanta
+  }
+```
+Yksittäinen kuvien tietokanta pitää sisällään seuraavata tiedot:
+```bash
+export const tietokannanNimi = [
+  {
+    id: 1,
+    image: kuvan nimi,
+    alignment: 'horizontal',
+    alt: 'Winter image 1 Jari Sokka'
+  }
+```
+ Recent osion kuvia hallitaan `slider-data.js` kautta.
+```bash
+export const sliderData = [
+  {
+    id: 1,
+    image: img1,
+    title: 'Small details',
+    settings: '100mm f/2.8 1/160s ISO100',
+    alignment: 'horizontal' ,
+    alt: 'macro plant'
+  }
+```
+
+
 
 Kansio `components` sisältään jokaisen osa-alueen oman kansion, jossa tämän osuuden toiminnallisuus ja tyylien määrittely.
 
