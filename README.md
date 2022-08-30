@@ -19,7 +19,7 @@ Sivusto on pyritty rakentamaan mahdollisimman pitkälle ilman ylimääräisiä k
 
 Sivustojen ylläpito on tällä hetkellä kahdella eri alustalla. Heroku toimi projektin alkuvaiheessa kehitysalustana ja myöhemmin virallinen versio laitettiin CloudFlare alustalle. Herokun sivut sulkeutuvat työn arvioinnin jälkeen.
 
-Herokussa:
+Heroku:
 
 https://jari-portfolio.herokuapp.com/
 

@@ -27,4 +27,5 @@
 | 24.8. |  3  | Kuvien lisäämistä galleriaan |
 | 25.8. |  2,5  | About kohtaan kääntyvän tilauskortin lisäys |
 | 29.8. |  6  | Domain palveluiden vertailua, sivujen ylläpitoalustojen vertailua, CloudFlare alustalle sivun asennus, oman osoitteen ostaminen ja käyttöönotto, dokumentaation kirjoittamista |
-| yht   | 111,5 | | 
+| 30.8. |  4  | reCAPTCHAN käyttöönotto s-postissa. Toimii Herokussa ja CloudFlaren dev versiossa, mutta ei omalla osoittelle jossa env tietoa ei löydy. Täysi mysteeri, täytyy jatkaa selvitystä huomenna |
+| yht   | 115,5 | | 

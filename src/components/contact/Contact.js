@@ -13,10 +13,7 @@ const Contact = () => {
   const form = useRef()
 
   const sendEmail = (e) => {
-    console.log(verified)
-    console.log(loaded)
     if (verified && loaded) {
-      console.log('sending')
       e.preventDefault()
       emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
         .then((result) => {
