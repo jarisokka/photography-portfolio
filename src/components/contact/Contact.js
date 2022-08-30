@@ -19,10 +19,12 @@ const Contact = () => {
       console.log('sending')
       e.preventDefault()
       emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
-        .then(() => {
+        .then((result) => {
+          console.log(result)
           alert('Your message has been delivered.')
           e.target.reset()
-        }, () => {
+        }, (result) => {
+          console.log(result)
           alert('Something went wrong, message not delivered')
         })
     } else {
