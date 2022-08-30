@@ -1,5 +1,6 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
+import Recaptcha from 'react-recaptcha'
 import './Contact.css'
 import mail from '../../assets/images/mail.jpg'
 import env from 'react-dotenv'
@@ -7,17 +8,36 @@ import env from 'react-dotenv'
 
 const Contact = () => {
 
+  const [ loaded, setLoaded ] = useState(false)
+  const [ verified, setVerified ] = useState(false)
   const form = useRef()
 
   const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
-      .then(() => {
-        alert('Your message has been delivered.')
-        e.target.reset()
-      }, () => {
-        alert('Something went wrong, message not delivered')
-      })
+    console.log(verified)
+    console.log(loaded)
+    if (verified && loaded) {
+      console.log('sending')
+      e.preventDefault()
+      emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, env.PUBLIC_KEY)
+        .then(() => {
+          alert('Your message has been delivered.')
+          e.target.reset()
+        }, () => {
+          alert('Something went wrong, message not delivered')
+        })
+    } else {
+      alert('Please verify that you are a human')
+    }
+  }
+
+  const recaptchaLoaded = () => {
+    setLoaded(true)
+  }
+
+  const verifyCallback = (response) => {
+    if (response) {
+      setVerified(true)
+    }
   }
 
   return (
@@ -42,6 +62,13 @@ const Contact = () => {
                 <label>MESSAGE:</label>
                 <textarea name='message' rows='7' placeholder='Type your Message' required></textarea>
                 <button type='submit' className='btn'>Send Message</button>
+                <Recaptcha
+                  elementID ='g-recaptcha'
+                  sitekey={env.SITEKEY}
+                  render="explicit"
+                  verifyCallback={verifyCallback}
+                  onloadCallback={recaptchaLoaded}
+                />
               </form>
             </div>
           </div>

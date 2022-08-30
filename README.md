@@ -34,6 +34,8 @@ https://jarisokka-photography.com/
 
 [React emailjs](https://www.emailjs.com/docs/examples/reactjs/)
 
+[React reCAPTCHA](https://www.npmjs.com/package/react-recaptcha)
+
 [react-dotenv](https://www.npmjs.com/package/react-dotenv) 
 
 ## Työaikakirjanpito
