@@ -27,7 +27,7 @@ export const galleryData = [
     coverimage: worldData[0].image,
     gategory: 'Landscapes',
     title: 'Around the world',
-    description: 'Some momerable sceneries from my travels',
+    description: 'Some memorable sceneries from my travels',
     images: worldData
   },
   {

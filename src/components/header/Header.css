@@ -42,14 +42,16 @@
 
 .navbar-links {
   padding: 1rem 2rem;
-  margin: 0;
+  margin: 0rem 2rem;
   display: flex; 
   justify-content: center;
-  align-items: center;
 }
 
 .navbar-links a {
+  display: block;
+  width: 5rem;
   margin: 0 1rem;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
@@ -64,6 +66,17 @@
 .navbar-links a.active {
   color: var(--color-navigation-tx-variant);
 }
+
+.navbar-links a.active .underline {
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  width: 5rem;
+	background-color: var(--color-navigation-tx-variant);
+  transform: scaleX(0.7);
+  transition: all 0.8s;
+}
+
 
 /* ========= BURGER MENU AND DEVICE SIZE ======= */
 .burger {
@@ -92,6 +105,12 @@
 
   .navbar-links a {
     margin: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .navbar-links a {
+    margin: 0rem;
   }
 }
 

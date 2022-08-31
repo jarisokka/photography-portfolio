@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './Landing.css'
 import kansi from '../../assets/images/kansi.jpg'
 
+
 const Landing = () => {
   const [wordNum, setWordNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)

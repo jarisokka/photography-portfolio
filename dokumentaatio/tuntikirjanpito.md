@@ -27,5 +27,6 @@
 | 24.8. |  3  | Kuvien lisäämistä galleriaan |
 | 25.8. |  2,5  | About kohtaan kääntyvän tilauskortin lisäys |
 | 29.8. |  6  | Domain palveluiden vertailua, sivujen ylläpitoalustojen vertailua, CloudFlare alustalle sivun asennus, oman osoitteen ostaminen ja käyttöönotto, dokumentaation kirjoittamista |
-| 30.8. |  4  | reCAPTCHAN käyttöönotto s-postissa. Ongelmia aiheutti Microsoftin selain, jossa sivut tuotannossa olevat sivut eivät toimineet. Selaimen muistin tyhjennys korjasi tilanteen |
-| yht   | 115,5 | | 
+| 30.8. |  4  | reCAPTCHAN käyttöönotto s-postissa. Ongelmia aiheutti Microsoftin selain välimuisti, joka sai näyttämään, että tuotannon sivut eivät toimineet. Selaimen muistin tyhjennys korjasi tilanteen, mutta tämän havaitsemiseen kului pidempi tovi |
+| 31.8. |  7,5  | Responsiivisen navikaation rakentaminen joka huomioi skrollaamisen, toteutus Header osioon käyttäen IntersectionObserver-toiminnallisuutta |
+| yht   | 123 | | 

@@ -1,6 +1,6 @@
 import './Header.css'
 import logo from '../../assets/images/logo2.png'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [ navbarOpen, setNavbarOpen ] = useState(false)
@@ -16,6 +16,19 @@ const Header = () => {
 
   const pages = ['home', 'recent', 'gallery', 'about', 'contact']
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          setActivePage(`#${entry.target.getAttribute('id')}`)
+        }
+      })
+    })
+    for (let i = 0, len = pages.length; i<len; i++) {
+      observer.observe(document.querySelector(`#${pages[i]}`))
+    }
+  }, [])
+
   return (
     <header className='container'>
       <div className='container-nav'>
@@ -30,7 +43,7 @@ const Header = () => {
                   <a href={`#${item}`}
                     onClick={() => setActivePage(`#${item}`)}
                     className={activePage === `#${item}` ? 'active' : ''}>
-                    {item}</a>
+                    {item}<div className='underline'></div></a>
                 </li>
               ))}
             </ul>
