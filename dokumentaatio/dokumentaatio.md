@@ -103,7 +103,7 @@ Tämän hetken versio on automatisoitu päivittymään Heroku-palveluun käyttä
 
 Sivun käyttöönotto CloudFlaressa tapahtuu hyvin suoraviivaisesti, etenkin kun käytössä on GitHub. `Pages` kohdasta valitaan `Create a project`, jonka jälkeen yhdistetään omaan GitHub repositorioon `Connect to Git`.
 
-Palveluiden linkittämisen jälkeen valitaan haluttu repositorio jonka jälkeen asetuksista saadaan määriteltyä projektin nimi, päivitys haara (master) sekä Framework joka tässä tapuksessa on Create React App. CloudFlare suorittaan tuotatoon laittamisen rivakasti.
+Palveluiden linkittämisen jälkeen valitaan haluttu repositorio jonka jälkeen asetuksista saadaan määriteltyä projektin nimi, päivitys haara (master) sekä Framework joka tässä tapuksessa on Create React App. CloudFlare suorittaan tuotantoon laittamisen rivakasti.
 
 ![cloud1](./cloud1.png)
 ![cloud1](./cloud2.png)
@@ -112,11 +112,11 @@ Määrittele ympäristömuuttujat kohdasta `Pages` -> `Settings` -> `Environment
 
 ### Oman osoitteen liittäminen sivustoon
 
-Tämä vaihe edellyttää, että haluttu nettiosoite on hankitty ja rekisteröity. Tätä projektia varten `jarisokka-photography.com` osoite hankittiin Google Domain palvelun kautta.
+Tämä vaihe edellyttää, että haluttu nettiosoite on hankittu ja rekisteröity. Tätä projektia varten `jarisokka-photography.com` osoite hankittiin Google Domain palvelun kautta.
 
 Valitse vasemmalta päävalikosta `Websites` ja tämän jälkeen luo uusi sivusto `Add a Site`. Anna sivustolle sama nimi, jonka olet rekisteröinyt itsellesi. Valitse tarjottavista palveluista itsellesi sopiva vaihtoehto, tässä käytettiin ilmaista versiota, paina `Continue`.
 
-`Review DNS records` kohdassa voit tarkastaa tai muuttaa tarvittaessa DNS tietoja. Uuden osoitteen ollessa kysessä tässä kohdassa ei tietoja ole paljoa esillä.
+`Review DNS records` kohdassa voit tarkastaa tai muuttaa tarvittaessa DNS tietoja. Uuden osoitteen ollessa kyseessä tässä kohdassa ei tietoja ole paljoa esillä.
 
 `Change your nameservers` antaa sinulle käytettävät nimipalvelimien nimet. Kopioi nämä ja korvaa nykyiset nimipalvelimen osoitteet. Esimerkiksi Google Domains nämä tulevat kohtaan `DNS` -> `Custom name servers`.
 
