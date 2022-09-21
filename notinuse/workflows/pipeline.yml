@@ -1,0 +1,32 @@
+#name: Deployment pipeline
+
+#on:
+#  push:
+#    branches:
+#      - main
+
+#jobs:
+#  simple_deployment_pipeline:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: '12.x'
+#      - name: npm install
+#        run: npm install
+#      - name: eslint
+#        run: npm run eslint
+#      - name: build
+#        run: npm run build
+#      - name: to heroku
+#        uses: akhileshns/heroku-deploy@v3.12.12
+#        if: ${{ github.event_name == 'push' }}
+#        with:
+#          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+#          heroku_app_name: "jari-portfolio"
+#          heroku_email: "ig.jarisokka@gmail.com"
+#          procfile: "web: npm start"
+#          healthcheck: "https://jari-portfolio.herokuapp.com"
+#          delay: 5
+#          rollbackonhealthcheckfailed: true

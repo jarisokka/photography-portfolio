@@ -9,7 +9,7 @@ export const galleryData = [
   {
     id: 1,
     coverimage: finlandData[0].image,
-    gategory: 'Landsape',
+    gategory: 'Landscapes',
     title: 'Sceneries from Finland',
     description: 'My favorite summer and autumn landscapes from Finland.',
     images: finlandData
@@ -17,7 +17,7 @@ export const galleryData = [
   {
     id: 2,
     coverimage: winterData[3].image,
-    gategory: 'Landsape',
+    gategory: 'Landscapes',
     title: 'Wintertime in Finland',
     description: 'My favorite wintertime landscapes from Finland.',
     images: winterData
@@ -35,7 +35,7 @@ export const galleryData = [
     coverimage: macroData[0].image,
     gategory: 'Macros',
     title: 'Small and beautiful',
-    description: 'Macro world is so facinating with all those small details.',
+    description: 'Macro world is so fascinating with all those small details.',
     images: macroData
   },
   {
