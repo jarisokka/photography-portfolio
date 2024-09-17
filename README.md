@@ -27,13 +27,9 @@ Kaiken kaikkiaan erittäin opettavainen rypistys ja pääsi syvemmin perehtymä�
 
 Sivustojen ylläpito on tällä hetkellä kahdella eri alustalla. Heroku toimi projektin alkuvaiheessa kehitysalustana ja myöhemmin virallinen versio laitettiin CloudFlare alustalle. Herokun sivut sulkeutuvat työn arvioinnin jälkeen.
 
-Heroku:
-
-https://jari-portfolio.herokuapp.com/
-
 CloudFlare:
 
-https://jarisokka-photography.com/
+https://photography-portfolio.pages.dev/
 
 
 ## Käytetyt kirjastot
